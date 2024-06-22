@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+/* @import Fuentes importadas de google*/
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';¿
+
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU Header comienzo */
+.contenedor-header{
+    /* Aca empieza el contenedor  Div class="contenedor Header */
+
+    background: #162730;   /* Fondo General   */
+    position: fixed;         /* Posicionamiento fijo. Idem al absoluto, pero aunque hagamos scroll no se mueve.  */
+    width: 100%;             /* Ocupa el 100% de la pantalla  */
+    top: 0;                  /* Estilo de letras  */
+    left: 0;                 /* Estilo de letras  */
+    z-index: 99;             /* Estilo de letras  */
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #58a397;
+    text-decoration: none;
+}
+.contenedor-header header ul{     /* Contenedor lista  */
+    display: flex;                /* Resaltar cada ves que pase el cursor  */
+    list-style: none;             /* Estilo de letras  */
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    /* Esconder menu cuando la pantalla es mas chica , dejarlo cuando es desktop  */
+    background-color: #1CB698;   /* Estilo de letras  */
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* Menu Header Fin*/
+
+/* SECCION I N I C I O */
+.inicio{
+    background-color: #558199;
+    color: #fff;
+    padding: 500px 500px  
+    
+
+
+    
+}
+.inicio .bienvenidos{
+
+    color: #1CB698;
+}
+
+* SECCION sobre mi */
+
+.sobremi{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(../assets/PERFIL\ LINKEDIN.JPG);
+    background-color: #192d38;
+    background-size: cover;
+    height: 100vh;
+    color: #2f648f;
+    display: flex;
+    align-items: center;
+}
+.sobremi .contenido-banner{
+    padding: 50px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.sobremi .contenido-banner img{
+    margin-top: 50px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.sobremi .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+    color: #58a397;
+}
+.sobremi .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+    color: #58a397;
+}
+.sobremi .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.sobremi .contenido-banner .redes a:hover{
+    background-color: #1CB698;
+}
+.texto-texto{
+    color: #58a397;;
+}
+
+/* SECCION CURRICULUM */
+.experiencia{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.experiencia .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.experiencia h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+/* SECCION PROYECTOS */
+.proyecto{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.proyecto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.proyecto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.proyecto .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.proyecto .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.proyecto .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+
+
+/* SECCION estudios */
+
+.estudios
+{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.estudios .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.estudios h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-swidth: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+
+
+
