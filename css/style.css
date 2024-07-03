@@ -2,8 +2,7 @@
 /* @import Fuentes importadas de google*/
 *{
     box-sizing: border-box;
-    font-family: 'Work Sans';¿
-
+    font-family: 'Work Sans';
     margin: 0;
     padding: 0;
 }
@@ -12,17 +11,17 @@ html{
     scroll-behavior: smooth;
 }
 /* MENU Header comienzo */
-.contenedor-header{
+.cont-nav{
     /* Aca empieza el contenedor  Div class="contenedor Header */
 
-    background: #162730;   /* Fondo General   */
+    background: #132d33;   /* Fondo General   */
     position: fixed;         /* Posicionamiento fijo. Idem al absoluto, pero aunque hagamos scroll no se mueve.  */
     width: 100%;             /* Ocupa el 100% de la pantalla  */
     top: 0;                  /* Estilo de letras  */
     left: 0;                 /* Estilo de letras  */
-    z-index: 99;             /* Estilo de letras  */
+    z-index: 99px;             /* Estilo de letras  */
 }
-.contenedor-header header{
+.cont-nav header{
     max-width: 1100px;
     margin: auto;
     display: flex;
@@ -30,17 +29,17 @@ html{
     align-items: center;
     padding: 15px 20px;
 }
-.contenedor-header header .logo a{
+.cont-nav header .logo a{
     font-family: 'Righteous';
-    font-size: 36px;
+    font-size: 30px;
     color: #58a397;
     text-decoration: none;
 }
-.contenedor-header header ul{     /* Contenedor lista  */
+.cont-nav header ul{     /* Contenedor lista  */
     display: flex;                /* Resaltar cada ves que pase el cursor  */
     list-style: none;             /* Estilo de letras  */
 }
-.contenedor-header header nav ul li a{
+.cont-nav header nav ul li a{
     text-align: none;
     color: #fff;
     margin: 0 15px;
@@ -48,8 +47,8 @@ html{
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
-    color: #1CB698;
+.cont-nav header nav ul li a:hover{
+    color: #1b484b;
 }
 .nav-responsive{
     /* Esconder menu cuando la pantalla es mas chica , dejarlo cuando es desktop  */
@@ -63,25 +62,43 @@ html{
 /* Menu Header Fin*/
 
 /* SECCION I N I C I O */
-.inicio{
-    background-color: #558199;
-    color: #fff;
-    padding: 500px 500px  
-    
-
-
-    
+.main{
+    background-color: #132d33;
 }
-.inicio .bienvenidos{
-
-    color: #1CB698;
+.cont-portada {
+    width: 100%; 
+    max-width: 900px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrar horizontalmente */
+    background-color: #192d38;
 }
+
+.cont-portada img {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+.texto-superpuesto {
+    position: absolute; /* Posición absoluta para superponer el texto */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición al centro */
+    text-align: center; /* Alinea el texto al centro */
+    color: white; /* Color del texto */
+    width: 80%; /* Ancho del texto (ajustable según necesidades) */
+}
+
+.texto-superpuesto h2 {
+    font-size: 24px; /* Tamaño de la fuente del título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+}
+
 
 * SECCION sobre mi */
 
 .sobremi{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(../assets/PERFIL\ LINKEDIN.JPG);
+    url(../assets/imagen02.JPG);
     background-color: #192d38;
     background-size: cover;
     height: 100vh;
@@ -90,12 +107,12 @@ html{
     align-items: center;
 }
 .sobremi .contenido-banner{
-    padding: 50px;
+    padding: 30px;
     background-color: #1e2326;
-    max-width: 350px;
+    max-width: 300px;
     margin: auto;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 10px;
 }
 .sobremi .contenido-banner img{
     margin-top: 50px;
@@ -114,7 +131,7 @@ html{
 .sobremi .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
-    color: #58a397;
+    color: #dee9e7;
 }
 .sobremi .contenido-banner .redes a{
     color: #fff;
@@ -133,7 +150,10 @@ html{
     background-color: #1CB698;
 }
 .texto-texto{
-    color: #58a397;;
+    font-size: 15px; /* Tamaño de la fuente del título */
+    margin-bottom: 15px; /* Espacio inferior del título */
+    color: #fff;
+    background-color: #1e2326;
 }
 
 /* SECCION CURRICULUM */
@@ -206,7 +226,6 @@ html{
     text-align: center;
     padding: 20px 0;
 }
-
 
 
 /* SECCION CONTACTO */
