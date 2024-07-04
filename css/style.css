@@ -11,6 +11,10 @@ html{
     scroll-behavior: smooth;
 }
 /* MENU Header comienzo */
+
+.header{
+    background: #1b484b;
+}
 .cont-nav{
     /* Aca empieza el contenedor  Div class="contenedor Header */
 
@@ -62,35 +66,60 @@ html{
 /* Menu Header Fin*/
 
 /* SECCION I N I C I O */
-.main{
-    background-color: #132d33;
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
 }
+
 .cont-portada {
-    width: 100%; 
-    max-width: 900px; /* Ancho máximo del contenedor */
-    margin: auto; /* Centrar horizontalmente */
-    background-color: #192d38;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background-color: #000; /* Fondo oscuro */
 }
 
 .cont-portada img {
-    display: block; 
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
 }
 
 .texto-superpuesto {
-    position: absolute; /* Posición absoluta para superponer el texto */
-    top: 50%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta la posición al centro */
-    text-align: center; /* Alinea el texto al centro */
-    color: white; /* Color del texto */
-    width: 80%; /* Ancho del texto (ajustable según necesidades) */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+
 }
 
-.texto-superpuesto h2 {
-    font-size: 24px; /* Tamaño de la fuente del título */
-    margin-bottom: 10px; /* Espacio inferior del título */
+@media (max-width: 768px) {
+    .texto-superpuesto {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .texto-superpuesto h2 {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }
 
 
@@ -297,7 +326,7 @@ html{
     top: 40%;
     background-color: #252A2E;
     padding: 20px;
-    max-swidth: 350px;
+    max-width: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -349,6 +378,4 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-
-
-
+}
