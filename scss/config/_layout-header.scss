@@ -1,0 +1,25 @@
+/* MENU Header comienzo */
+body {
+    background-color: #252A2E;
+    /* Establece un color de fondo oscuro para todo el body */
+    color: white;
+    /* Cambia el color del texto a blanco para mejorar la legibilidad */
+    height: 100%;
+  }
+  
+  .mi-navbar-personalizada {
+    background-color: rgba(3, 24, 70, 0.575);
+    /* Fondo gris oscuro */
+    color: #ffffff
+  }
+  
+  .mi-navbar-personalizada .navbar-nav .nav-link {
+    color: #ffffff;
+    /* Asegura que los enlaces también sean blancos */
+  }
+  
+  .mi-navbar-personalizada .navbar-brand {
+    color: #ffffff;
+    /* Logo con letras blancas */
+  }
+  

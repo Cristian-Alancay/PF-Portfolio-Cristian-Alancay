@@ -1,0 +1,15 @@
+/* Media queries para Tablet */
+@media (min-width: 768px) {
+    .sobre-mi {
+      height: 100vh;
+      /* Restaura la altura para tabletas y desktop */
+    }
+  }
+  
+  /* Media queries para Desktop */
+  @media (min-width: 992px) {
+    .main-text {
+      flex-direction: row;
+      /* Cambia la dirección a fila para más espacio */
+    }
+  }
